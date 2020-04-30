@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>
+			The Cub House
+		</title>
+		<link rel="stylesheet" href="https://use.typekit.net/uti3gvn.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="assets/reset.css" />
+		<link rel="stylesheet" href="assets/custom.css" />
+
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://cubhouse.cc/favicon.ico"
+		/>
+	</head>
+	<body>
+		<nav class="container">
+			<div class="item brand">
+				<a href="index.html">The Cub House</a>
+			</div>
+			<div class="hamburger">
+				<a href="javascript:void(0);" class="icon" onclick="expandHamburger()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			<ul id="navigation-block" class="nav-list">
+				<li><a href="index.html#notice">COVID-19 Notice</a></li>
+				<li><a href="bikes.html">Bikes</a></li>
+				<li><a href="service.html">Service + Repairs</a></li>
+				<li><a href="https://shop.cubhouse.cc">Shop Online</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section class="memo">
+				<div class="content-inset">
+					<h2>Currently in stock</h2>
+					<p>
+						We are working to get a litst of our available bikes online. Check
+						back here often or follow us
+						<a href="https://instagram.com/itsnotabikeshop" target="_blank"
+							>@itsnotabikeshop</a
+						>
+						for updates.
+					</p>
+				</div>
+			</section>
+			<section class="what-to-expect">
+				<div class="content-inset">
+					<h2>Brands we carry</h2>
+					<p>
+						Below is a selection of the brands we carry at The Cub House. Please
+						contact us for current availability.
+					</p>
+					<ul class="no-icon two-column">
+						<li>All-City</li>
+						<li>Stinner</li>
+						<li>Chris King</li>
+						<li>Giant</li>
+						<li>Giro</li>
+						<li>Linus</li>
+						<li>Ibis</li>
+						<li>Mavic</li>
+						<li>Shimano</li>
+						<li>Surly</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="address">
+				<h1>The Cub House</h1>
+				<p class="location-details">
+					<a href="https://goo.gl/maps/1dFnBNEgsq5WaeGo6" target="_blank"
+						>2510 Mission Street<br />
+						San Marino, CA 91108</a
+					>
+				</p>
+			</div>
+			<div class="contact">
+				<p><strong>Currently open by appointment only</strong></p>
+				<p class="contact-details">
+					<a target="_blank" href="tel:+16267553003">(626) 755-3003</a><br />
+					<a target="_blank" href="mailto:info@cubhouse.cc">info@cubhouse.cc</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		function expandHamburger() {
+			console.log("hello");
+			let navigationBlock = document.getElementById("navigation-block");
+			if (navigationBlock.className === "nav-list") {
+				navigationBlock.className += " nav-showing";
+			} else {
+				navigationBlock.className = "nav-list";
+			}
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-163790909-1"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "UA-163790909-1");
+	</script>
+</html>

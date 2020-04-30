@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>
+			The Cub House
+		</title>
+		<link rel="stylesheet" href="https://use.typekit.net/uti3gvn.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="assets/reset.css" />
+		<link rel="stylesheet" href="assets/custom.css" />
+
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="https://cubhouse.cc/favicon.ico"
+		/>
+	</head>
+	<body>
+		<nav class="container">
+			<div class="item brand">
+				<a href="index.html">The Cub House</a>
+			</div>
+			<div class="hamburger">
+				<a href="javascript:void(0);" class="icon" onclick="expandHamburger()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			<ul id="navigation-block" class="nav-list">
+				<li><a href="index.html#notice">COVID-19 Notice</a></li>
+				<li><a href="bikes.html">Bikes</a></li>
+				<li><a href="service.html">Service + Repairs</a></li>
+				<li><a href="https://shop.cubhouse.cc">Shop Online</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section class="memo">
+				<div class="content-inset">
+					<h2>Bike Service + Repairs</h2>
+					<p>
+						The Cub House is currently open to provide essential bike service by
+						appointment only. Call, text or email with any questions, or to set
+						up an appointment.
+					</p>
+					<p>
+						Due to safety protocols implemented for the health and safety of our
+						employees and customers service estimates are longer than usual.
+					</p>
+				</div>
+			</section>
+			<section class="what-to-expect">
+				<div class="content-inset">
+					<h2>Standard Service Menu</h2>
+					<p>
+						Prices may vary depending on the condition of your bike and the
+						parts required for service.
+					</p>
+					<div class="two-column">
+						<div class="tune-up">
+							<h3>Tune Up & Build</h3>
+							<ul class="no-icon">
+								<li>Kids/Cruiser — $50</li>
+								<li>Commuter — $65</li>
+								<li>
+									Road/MTB: — $85
+									<ul>
+										<li>+ Wash — $40</li>
+									</ul>
+								</li>
+								<li>Custom Build — $250-320</li>
+							</ul>
+						</div>
+						<div class="bearings">
+							<h3>Bearings</h3>
+							<ul class="no-icon">
+								<li>
+									Headset — $15
+									<ul>
+										<li>Overhaul — $30</li>
+									</ul>
+								</li>
+								<li>
+									Bottom Bracket — $20
+									<ul>
+										<li>Overhaul — $40</li>
+									</ul>
+								</li>
+								<li>
+									Hubs — $25
+									<ul>
+										<li>Overhaul Front — $25</li>
+										<li>Overhaul Rear — $35</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="cockpit">
+							<h3>Cockpit</h3>
+							<ul class="no-icon">
+								<li>Grips — $5</li>
+								<li>Bartape — $15</li>
+								<li>Handlebar — $20-40</li>
+								<li>Saddle — $10</li>
+							</ul>
+                        </div>
+                        <div class="shift-stop">  
+                            <h3>Shift & Stop</h3>
+                            <ul class="no-icon">
+                                <li>Brake/Derailleur — $20
+                                    <ul>
+                                        <li>2 for $30</li>
+                                    </ul>
+                                </li>
+                                <li>Cable Replacement: — $+5</p>
+                                <li>Hanger Alignment — $+10</li>
+                                <li>Brake Bleed/Noise — $30
+                                    <ul>
+                                        <li>2 for $40</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tires">
+                            <h3>Tires & Tubes</h3>
+                            <ul class="no-icon">
+                                <li>Install Tire/Tube — $10
+                                    <ul>
+                                        <li>Tubeless — $15</li>
+                                    </ul>
+                                </li>
+                                <li>Wheel True — $20-40</li>
+                                <li>Wheel build — $60-100</li>
+                            </ul>
+                        </div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="address">
+				<h1>The Cub House</h1>
+				<p class="location-details">
+					<a href="https://goo.gl/maps/1dFnBNEgsq5WaeGo6" target="_blank"
+						>2510 Mission Street<br />
+						San Marino, CA 91108</a
+					>
+				</p>
+			</div>
+			<div class="contact">
+				<p><strong>Currently open by appointment only</strong></p>
+				<p class="contact-details">
+					<a target="_blank" href="tel:+16267553003">(626) 755-3003</a><br />
+					<a target="_blank" href="mailto:info@cubhouse.cc">info@cubhouse.cc</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		function expandHamburger() {
+			console.log("hello");
+			let navigationBlock = document.getElementById("navigation-block");
+			if (navigationBlock.className === "nav-list") {
+				navigationBlock.className += " nav-showing";
+			} else {
+				navigationBlock.className = "nav-list";
+			}
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-163790909-1"
+	></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "UA-163790909-1");
+	</script>
+</html>
